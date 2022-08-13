@@ -12,6 +12,7 @@ export default function Header() {
 			onClick={() => navigate("/")}
 		>
 			<h2 className="head-title">TheFoodList</h2>
+			
 		</div>
 	);
 };

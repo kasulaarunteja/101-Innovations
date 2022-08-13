@@ -19,7 +19,7 @@ export default function FoodList() {
     const navigate= useNavigate();
 
     useEffect(()=>{
-        axios.get("http://localhost:8080/food").then((res) => {
+        axios.get("https://invation101.herokuapp.com/food").then((res) => {
             setLoding(false);
              setData(res.data);
           

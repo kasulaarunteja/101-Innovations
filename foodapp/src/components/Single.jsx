@@ -20,7 +20,7 @@ export default function  Single(){
     }, []);
 
      const getData = () =>{
-        axios.get(`http://localhost:8080/food?code=${code}`).then((res) => {
+        axios.get(`https://invation101.herokuapp.com/food?code=${code}`).then((res) => {
             let findcode = res.data.filter((el) => el.code == code)
             //console.log(findcode)
             setProduct(findcode[0]);
@@ -37,11 +37,15 @@ export default function  Single(){
     return (
         <div>
             <Header />
+            <div className="container">
+            <div className="left">FoodList</div>
+            <div className="right">Favourites</div>
+           </div>
             <div className="details">
     <div className="pro-div">
         <img src="img/icon.png" alt="not found" className="Icon-img-src" />
         <h4 className="Pro-tag">{product.product_name}</h4>
-        <button variant="contained" onClick={()=>{}}> +Favourities</button>
+      
     </div>
 
     <div className="table-main-container">
