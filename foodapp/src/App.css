@@ -135,4 +135,11 @@ hr{
 }
 
 
-
+.btnsort button {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    padding: 5px;
+    background-color: aqua;
+}

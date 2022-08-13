@@ -26,16 +26,31 @@ export default function FoodList() {
         })
     }, [])
 
-      console.log(data)
+     // console.log(data)
+
+     const Ascorder = () => {
+         data.sort((a,b)=>b.proteins_100g-a.proteins_100g)
+         setData([...data])
+     }
+
+     const  Descorder = () => {
+        data.sort((a,b)=>a.proteins_100g-b.proteins_100g)
+        setData([...data])
+     }
+
           
 
     return loding ? "loding" :  (
-        
         <div>
            <Header/>
            <div className="container">
             <div className="left">FoodList</div>
             <div className="right">Favourites</div>
+           </div>
+           <div className="btnsort">
+            <label>Sort Proteins</label>
+            <button onClick={Ascorder}>Low to High</button>
+            <button onClick={Descorder}>High To Low</button>
            </div>
            <div className="Details">
             {data.map((ele) => {
