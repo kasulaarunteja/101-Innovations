@@ -48,7 +48,7 @@ export default function FoodList() {
             <div className="right">Favourites</div>
            </div>
            <div className="btnsort">
-            <label>Sort Proteins</label>
+            <label>Sort Proteins :</label>
             <button onClick={Ascorder}>Low to High</button>
             <button onClick={Descorder}>High To Low</button>
            </div>
