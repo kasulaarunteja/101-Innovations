@@ -17,6 +17,8 @@
 .Details{
     width: 97%;
     margin: auto;
+    text-align: center;
+    
 }
 .search{
     margin-right: 3%;
@@ -38,13 +40,15 @@
 .pro-details{
     display: flex;
     margin-top: 13px;
-
+   
 }
 .indiv-pro{
+    width: 150px;
     margin-left: 10px;
     display: flex;
     align-items: center;
     border-bottom: 2px solid black;
+    background-color: blue;
 
 }
 .indiv-pro:hover{
